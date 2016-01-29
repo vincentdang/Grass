@@ -1,0 +1,26 @@
+public class Grass{
+  
+  public void myMethod(){
+   
+   class InnerDemo{
+     public void blah(){
+     System.out.println("I cut grass");
+     }
+   } //end of inner class
+   
+   InnerDemo inner = new InnerDemo();
+   inner.blah();
+    
+  }//end of method
+  
+  
+
+  
+  public static void main (String args[]){
+    Grass outer = new Grass();
+    outer.myMethod();
+  }
+  
+  
+  
+}
